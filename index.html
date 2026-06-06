@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrismaTech Code Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="topo">
+    <a class="logo" href="#inicio">
+      <span>PRISMATECH</span>
+      <small>code<br>academy</small>
+    </a>
+
+    <button id="menu">☰</button>
+
+    <nav id="nav">
+      <a href="#sobre">Sobre nós</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#depoimentos">Depoimentos</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <video autoplay muted loop class="video" src="heroVideo.webm"></video>
+    <div class="hero-texto">
+      <h1><span>Aprenda</span>crie e evolua em um ambiente que conecta educação,<br>tecnologia e diversão.</h1>
+      <p>Excelência, inovação e criatividade em um só lugar</p>
+      <p>Formamos talentos preparados para se destacar nas áreas mais promissoras da tecnologia.</p>
+
+      <div class="acoes">
+        <a class="botao cheio" href="#cursos">Conheça já!</a>
+        <a class="botao borda" href="#projetos">Inscreva-se</a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="https://github.com/Prisma-Tech-Brasil/Projeto-Landing-Page/blob/main/assets/img/main-hero.png?raw=true"
+        alt="Hero Image">
+    </div>
+
+
+  </section>
+
+  <section>
+
+
+
+  </section>
+
+  <div class="faixa">
+    <div>
+      <span>FullStack</span><b>✦</b><span>GTA</span><b>✦</b><span>PlayGo</span><b>✦</b><span>3D Master
+        Pro</span><b>✦</b><span>ProPlayer</span><b>✦</b>
+      <span>FullStack</span><b>✦</b><span>GTA</span><b>✦</b><span>PlayGo</span><b>✦</b><span>3D Master
+        Pro</span><b>✦</b><span>ProPlayer</span><b>✦</b>
+    </div>
+  </div>
+
+  <section class="secao" id="cursos">
+    <h2>Alcance um<br><strong>Nível</strong> Superior</h2>
+    <p class="sub">Sua preparação para o futuro, unindo educação, jogos e diversão.</p>
+
+    <div class="cursos-grid">
+      <article class="curso c1">
+        <h3>Formação Executiva</h3>
+      </article>
+      <article class="curso c2">
+        <h3>Inglês</h3>
+      </article>
+      <article class="curso c3">
+        <h3>Programação FullStack</h3>
+      </article>
+      <article class="curso c4">
+        <h3>PlayGo</h3>
+      </article>
+    </div>
+
+    <div class="acoes centro">
+      <a class="botao cheio" href="#projetos">Todos os cursos</a>
+      <a class="botao borda" href="#sobre">Conheça mais</a>
+    </div>
+  </section>
+
+  <section class="secao sobre" id="sobre">
+    <hr>
+    <h2>Sobre <strong>nós</strong></h2>
+    <p class="sub">Somos uma empresa apaixonada por tecnologia, inovação,<br>educação e entretenimento.</p>
+
+    <div class="sobre-grid">
+      <article class="evento e1">
+        <p><b>Cariacica Geek Game:</b> organizamos torneios com adrenalina e estratégia em jogo!</p>
+      </article>
+      <article class="evento e2">
+        <p><b>Boulevard Geek XP:</b> apoiamos campeonatos e concursos de cosplay.</p>
+      </article>
+      <article class="evento e3">
+        <p><b>Arena Tech:</b> laboratório com PCs de alta performance para estudar e jogar.</p>
+      </article>
+      <article class="evento e4">
+        <p><b>Cosplay em alta:</b> cultura Geek e Anime com muita criatividade.</p>
+      </article>
+    </div>
+
+    <div class="bolinhas">
+      <span></span><span></span><span></span><span class="ativo"></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="banner">
+      <div class="banner-img"></div>
+      <div class="banner-texto">
+        <h2>Conheça um<br><strong>mundo</strong> novo e<br>vibrante</h2>
+        <p>A educação aliada ao entretenimento é uma das mais poderosas ferramentas de transformação pessoal e
+          profissional.</p>
+        <button class="botao borda" id="abrir-video">Veja o vídeo</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="faixa">
+    <div>
+      <span>ProPlayer</span><b>✦</b><span>FullStack</span><b>✦</b><span>GTA</span><b>✦</b><span>PlayGo</span><b>✦</b><span>3D
+        Master Pro</span><b>✦</b>
+      <span>ProPlayer</span><b>✦</b><span>FullStack</span><b>✦</b><span>GTA</span><b>✦</b><span>PlayGo</span><b>✦</b><span>3D
+        Master Pro</span><b>✦</b>
+    </div>
+  </div>
+
+  <section class="secao projetos" id="projetos">
+    <h2>Projetos dos <strong>alunos</strong></h2>
+    <p class="sub">Nossos alunos desenvolvem projetos para aprimorar suas<br>habilidades e conhecimentos em diversas
+      tecnologias.</p>
+
+    <div class="filtros">
+      <button class="ativo" data-filtro="fullstack">FullStack</button>
+      <button data-filtro="gta">GTA</button>
+      <button data-filtro="playgo">PlayGo</button>
+      <button data-filtro="master">3D Master Pro</button>
+      <button data-filtro="proplayer">ProPlayer</button>
+    </div>
+
+    <div class="projetos-grid">
+      <article class="projeto" data-cat="fullstack">
+        <div class="print formulario"></div>
+        <h3>Formulário de contato</h3>
+        <p>Wallace</p>
+        <small>wallaceofc@hotmail.com</small>
+        <a class="botao cheio pequeno" href="#">Veja o projeto</a>
+      </article>
+
+      <article class="projeto" data-cat="fullstack">
+        <div class="print rede"></div>
+        <h3>Rede social</h3>
+        <p>Wallace</p>
+        <small>wallaceofc@hotmail.com</small>
+        <a class="botao cheio pequeno" href="#">Veja o projeto</a>
+      </article>
+
+      <article class="projeto escondido" data-cat="gta">
+        <div class="print gta"></div>
+        <h3>Regras</h3>
+        <p>Caio</p>
+        <small>desconhecido</small>
+        <a class="botao cheio pequeno" href="#">Veja o projeto</a>
+      </article>
+
+      <article class="projeto escondido" data-cat="playgo">
+        <div class="print playgo"></div>
+        <h3>Camisa Urso</h3>
+        <p>João Pedro</p>
+        <small>desconhecido</small>
+        <a class="botao cheio pequeno" href="#">Veja o projeto</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="secao" id="depoimentos">
+    <h2>Depoimentos dos <strong>alunos</strong></h2>
+    <div class="depo">
+      <p id="depo-texto">Na Prisma, descobri muito mais do que conhecimento técnico. Encontrei motivação, apoio e a
+        chance de crescer como profissional e pessoa.</p>
+      <h3 id="depo-nome">Kevin Izaías</h3>
+      <button class="botao borda" id="proximo">Próximo</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="logo rodape">
+      <span>PRISMATECH</span>
+      <small>code<br>academy</small>
+    </div>
+    <p>Somos uma empresa apaixonada por tecnologia, inovação, educação e entretenimento.</p>
+    <p>© Copyright PrismaTech Code Academy 2026.</p>
+  </footer>
+
+  <a class="whats" href="#">☏</a>
+
+  <div class="modal" id="modal">
+    <div>
+      <button id="fechar-video">×</button>
+      <p>Seu navegador não suporta vídeos.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
