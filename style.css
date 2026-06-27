@@ -24,6 +24,14 @@ a {
     color: inherit;
 }
 
+.curso{
+    transition: transform 0.3s ease;
+}
+
+.curso:hover{
+    transform: scale(1.1);
+}
+
 /* =========================
    HEADER
 ========================= */
@@ -46,13 +54,14 @@ a {
     position: relative;
     display: inline-block;
 
-    min-width: 250px;
+    min-width: 100px;
 
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 900;
     line-height: 0.75;
     letter-spacing: -2px;
     text-transform: uppercase;
+    background-image: url("logo.png");
 }
 
 .logo small {
@@ -140,16 +149,34 @@ nav a:hover {
 
 .hero-img {
     position: absolute;
-    right: 8vw;
-    bottom: 80px;
+    right: 6vw;
+    bottom: 0px;
 
-    width: min(570px, 45vw);
-    height: 520px;
 
-    
+
 
     filter: drop-shadow(0 0 28px #43d2ff88);
     opacity: 0.9;
+}
+
+.foto{
+    width: 700px;
+    height: auto;
+
+    animation: fotoprincipal 20s linear infinite;
+
+    
+}
+@keyframes fotoprincipal{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-20%);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .hero-texto {
@@ -159,7 +186,7 @@ nav a:hover {
 }
 
 .hero h1 {
-    margin: 0 0 28px;
+    margin: 0 0 15px;
 
     font-size: clamp(48px, 5.3vw, 92px);
     line-height: 0.98;
@@ -258,7 +285,7 @@ nav a:hover {
 
     min-width: max-content;
 
-    animation: faixa 22s linear infinite;
+    animation: faixa 18s linear infinite;
 }
 
 .faixa span {
@@ -282,7 +309,7 @@ nav a:hover {
     }
 
     to {
-        transform: translateX(-50%);
+        transform: translateX(-30%);
     }
 }
 
@@ -381,19 +408,22 @@ nav a:hover {
 }
 
 .c1::before {
-    background-image: url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80");
+    background-image: url("d924af23-53c1-47a6-91af-5ee1f81cdd68.png");
 }
 
 .c2::before {
-    background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80");
+    background-image: url("ingles.png");
 }
 
 .c3::before {
-    background-image: url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80");
+    background-image: url("foto\ fullstack.jpng.png");
 }
 
 .c4::before {
-    background-image: url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80");
+    background-image: url("e0e71952-60e7-44ab-b048-7d94002754b0.png");
+
+    
+    
 }
 
 /* =========================
@@ -452,19 +482,19 @@ nav a:hover {
 }
 
 .e1 {
-    background-image: url("https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=80");
+    background-image: url("arena-1.png");
 }
 
 .e2 {
-    background-image: url("https://images.unsplash.com/photo-1608889825103-eb5ed706fc64?auto=format&fit=crop&w=900&q=80");
+    background-image: url("cosplay-1.png");
 }
 
 .e3 {
-    background-image: url("https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=900&q=80");
+    background-image: url("evento-1.png");
 }
 
 .e4 {
-    background-image: url("https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=900&q=80");
+    background-image: url("games-1.png");
 }
 
 .bolinhas {
@@ -510,19 +540,22 @@ nav a:hover {
 
 .banner-img {
     height: 100%;
-    min-height: 665px;
+    /* min-height: px; */
 
-    background:
+    /* background:
         radial-gradient(circle at 58% 28%, #ff2cca, transparent 12%),
         radial-gradient(circle at 42% 22%, #31d4ff, transparent 12%),
-        linear-gradient(135deg, #090d27, #28145b 45%, #ed38ba);
+        linear-gradient(135deg, #090d27, #28145b 45%, #ed38ba); */
 
-    clip-path: polygon(
+    /* clip-path: polygon(
         0 0,
         82% 0,
         66% 100%,
         0 100%
-    );
+    
+    ); */
+    background-image: url("A.png");
+    background-size: cover;
 }
 
 .banner-texto {
@@ -814,7 +847,9 @@ footer p {
     }
 
     .hero-img {
-        opacity: 0.36;
+        opacity: 0.3;
+        
+        animation: faixa 10s linear infinite;
     }
 
     .cursos-grid,
